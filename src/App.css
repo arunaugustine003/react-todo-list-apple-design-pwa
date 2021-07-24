@@ -128,6 +128,7 @@ select {
 }
 select {
   color: #ff6f47;
+
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 12rem;
@@ -177,6 +178,9 @@ EXAMPLE:- IPADS IN PORTRAIT MODE
     min-width: 15rem;
     color: black;
   }
+  .todo-button {
+    background-color: white;
+  }
   .todo-item {
     font-size: 1.1rem;
   }
@@ -188,6 +192,7 @@ EXAMPLE:- IPADS IN PORTRAIT MODE
   select {
     min-width: 15rem;
     height: 3rem;
+    background-color: white;
   }
   /* Arrow */
   .select::after {
@@ -223,7 +228,9 @@ EXAMPLE:- OLD IPHONES
     min-width: 8rem;
     color: black;
   }
-
+  .todo-button {
+    background-color: white;
+  }
   .trash-btn,
   .complete-btn {
     font-size: 0.9rem;
@@ -232,6 +239,7 @@ EXAMPLE:- OLD IPHONES
   select {
     min-width: 27rem;
     height: 3rem;
+    background-color: white;
   }
   /* Arrow */
   .select::after {
