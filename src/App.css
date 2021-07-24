@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: rgb(92, 117, 226);
+  background: rgba(255, 0, 35, 1);
   background: linear-gradient(
     90deg,
     rgba(92, 117, 226, 1) 5%,
@@ -87,7 +87,7 @@ form button:hover {
   font-size: 1rem;
 }
 .complete-btn {
-  background: rgb(48, 48, 184);
+  background: rgba(23, 23, 163, 1);
 }
 .todo-item {
   padding: 0rem 0.5rem;
@@ -149,3 +149,92 @@ select {
     transform: scale(1.5);
   }
   */
+
+/*
+SMALL PHONES TO SMALL TABLETS WITH SCREEN SIZE RANGING FROM 481px TO 767px
+EXAMPLE:- IPADS IN PORTRAIT MODE
+*/
+@media only screen and (max-width: 767px) {
+  header {
+    font-size: 1rem;
+  }
+  .apple h2 {
+    font-size: 1.25rem;
+  }
+
+  .todo-list {
+    min-width: 70%;
+    list-style: none;
+  }
+
+  .filter-todo {
+    padding: 1rem;
+    max-width: 7rem;
+  }
+
+  .todo-input {
+    margin-left: 1rem;
+    min-width: 15rem;
+    color: black;
+  }
+  .todo-item {
+    font-size: 1.1rem;
+  }
+  .trash-btn,
+  .complete-btn {
+    font-size: 0.9rem;
+  }
+
+  select {
+    min-width: 15rem;
+    height: 3rem;
+  }
+  /* Arrow */
+  .select::after {
+    width: 0.7rem;
+  }
+}
+/*
+SMALL PHONES WITH SCREEN SIZE RANGING FROM 0 TO 480px
+EXAMPLE:- OLD IPHONES
+*/
+@media only screen and (max-width: 480px) {
+  header {
+    font-size: 1rem;
+  }
+  .apple h2 {
+    font-size: 1rem;
+  }
+
+  .todo-list {
+    min-width: 80%;
+    list-style: none;
+  }
+  .todo-item {
+    font-size: 1rem;
+  }
+  .filter-todo {
+    padding: 1rem;
+    max-width: 7rem;
+  }
+
+  .todo-input {
+    margin-left: 1rem;
+    min-width: 8rem;
+    color: black;
+  }
+
+  .trash-btn,
+  .complete-btn {
+    font-size: 0.9rem;
+  }
+
+  select {
+    min-width: 27rem;
+    height: 3rem;
+  }
+  /* Arrow */
+  .select::after {
+    width: 0.7rem;
+  }
+}
