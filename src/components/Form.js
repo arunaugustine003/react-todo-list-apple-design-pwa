@@ -6,7 +6,7 @@ const Form = (props) => {
   };
   const submitToDoHandler = (e) => {
     e.preventDefault();
-    if (e.target.value === undefined) {
+    if (props.inputText === "") {
       alert("Please enter a string or any value");
     } else {
       props.setTodos([
